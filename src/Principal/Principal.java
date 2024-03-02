@@ -32,10 +32,10 @@ public class Principal {
 		if (nivel < 3) {
 			nivel++;
 
-			TreeDataSet tree1 = tree.addChild("A=" + nivel + ":" + Math.floor(Math.random() * 9999));
+			TreeDataSet tree1 = tree.addChild("A=" + nivel + ":" + Math.round(Math.random() * 99));
 			recursivo(tree1, nivel);
 
-			TreeDataSet tree2 = tree.addChild("B=" + nivel + ":" + Math.floor(Math.random() * 9999));
+			TreeDataSet tree2 = tree.addChild("B=" + nivel + ":" + Math.round(Math.random() * 99));
 			recursivo(tree2, nivel);
 		}
 

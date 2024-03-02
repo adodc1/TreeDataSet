@@ -83,7 +83,7 @@ public class TreeDataSet implements Iterable<TreeDataNode> {
 		if (this.isRoot()) {
 			return "";
 		} else {
-			return this.parent != null ? this.parent.getPath() + this.data.toString() : "null";
+			return this.parent != null ? this.parent.getPath() + "|" + this.data.toString() : "null";
 		}
 	}
 
