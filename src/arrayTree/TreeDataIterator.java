@@ -8,6 +8,9 @@ public class TreeDataIterator implements Iterator<TreeDataNode> {
 	private ArrayList<TreeDataNode> lista;
 	private Iterator<TreeDataNode> it;
 
+	/**
+	 * @param data
+	 */
 	public TreeDataIterator(TreeDataSet data) {
 		this.lista = new ArrayList<TreeDataNode>();
 		this.recursivo(data);
